@@ -1,0 +1,287 @@
+
+
+================================================================
+== Vivado HLS Report for 'PacketProcess'
+================================================================
+* Date:           Wed Jun 12 12:08:42 2024
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        PacketChecker_MB
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010-clg225-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.889|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
++-----------------+---------+-------+-------+-------+-----+
+|DSP              |        -|      -|      -|      -|    -|
+|Expression       |        -|      -|      0|    420|    -|
+|FIFO             |        -|      -|      -|      -|    -|
+|Instance         |        -|      -|      -|      -|    -|
+|Memory           |        -|      -|      -|      -|    -|
+|Multiplexer      |        -|      -|      -|    201|    -|
+|Register         |        -|      -|    374|      -|    -|
++-----------------+---------+-------+-------+-------+-----+
+|Total            |        0|      0|    374|    621|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Available        |      120|     80|  35200|  17600|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Utilization (%)  |        0|      0|      1|      3|    0|
++-----------------+---------+-------+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |add_ln102_fu_1624_p2   |     +    |      0|  0|  32|          32|          32|
+    |add_ln103_fu_1641_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln108_fu_1592_p2   |     +    |      0|  0|  32|          32|          32|
+    |add_ln109_fu_1609_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln114_fu_1554_p2   |     +    |      0|  0|  32|          32|          32|
+    |add_ln115_fu_1567_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln120_fu_1508_p2   |     +    |      0|  0|  32|          32|          32|
+    |add_ln121_fu_1525_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln162_fu_1763_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln167_fu_1724_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln168_fu_1737_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln223_fu_1995_p2   |     +    |      0|  0|  16|          16|           8|
+    |add_ln234_fu_1971_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln241_fu_1939_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln248_fu_1907_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln255_fu_1869_p2   |     +    |      0|  0|  16|          16|          16|
+    |add_ln63_fu_1788_p2    |     +    |      0|  0|  16|          16|           8|
+    |add_ln91_fu_1691_p2    |     +    |      0|  0|  16|          16|          16|
+    |add_ln96_fu_1652_p2    |     +    |      0|  0|  16|          16|          16|
+    |add_ln97_fu_1665_p2    |     +    |      0|  0|  16|          16|          16|
+    |ap_condition_509       |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_888       |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_902       |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_911       |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_917       |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_920       |    and   |      0|  0|   1|           1|           1|
+    |icmp_ln138_fu_1478_p2  |   icmp   |      0|  0|   7|          16|          16|
+    |icmp_ln185_fu_1706_p2  |   icmp   |      0|  0|   7|          16|          16|
+    |icmp_ln42_fu_1801_p2   |   icmp   |      0|  0|   4|           8|           6|
+    |icmp_ln55_fu_1770_p2   |   icmp   |      0|  0|   4|           8|           1|
+    |icmp_ln60_fu_1776_p2   |   icmp   |      0|  0|   4|           8|           2|
+    |xor_ln138_fu_1485_p2   |    xor   |      0|  0|   2|           1|           2|
+    |xor_ln185_fu_1713_p2   |    xor   |      0|  0|   2|           1|           2|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 420|         448|         419|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                       | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                         |   3|          3|    1|          3|
+    |ap_phi_mux_out2_Packet_state_phi_fu_1239_p4       |   3|          2|    3|          6|
+    |ap_phi_mux_out2_Response_state_phi_fu_1250_p4     |   3|          2|    2|          4|
+    |ap_phi_mux_out2_dataOutRdy_phi_fu_1228_p4         |   3|          2|    1|          2|
+    |ap_phi_mux_out2_error_phi_fu_1195_p4              |   3|          2|    1|          2|
+    |ap_phi_mux_out2_rdAddress_phi_fu_1283_p4          |   3|          2|   16|         32|
+    |ap_phi_mux_out2_rdEn_phi_fu_1217_p4               |   3|          2|    1|          2|
+    |ap_phi_mux_out2_wrAddress_phi_fu_1261_p4          |   3|          2|   16|         32|
+    |ap_phi_mux_out2_wrData_phi_fu_1272_p4             |   3|          2|   32|         64|
+    |ap_phi_mux_out2_wrEn_phi_fu_1206_p4               |   3|          2|    1|          2|
+    |ap_phi_mux_out_Packet_state_loc_5_phi_fu_494_p44  |   4|          6|    3|         18|
+    |ap_phi_mux_out_Packet_state_loc_7_phi_fu_1142_p4  |   3|          2|    3|          6|
+    |ap_phi_mux_out_Response_state_l_2_phi_fu_1154_p4  |   3|          2|    2|          4|
+    |ap_phi_mux_out_dataOutRdy_new_4_phi_fu_1130_p4    |   3|          2|    1|          2|
+    |ap_phi_mux_out_error_new_6_phi_fu_285_p44         |   4|          5|    1|          5|
+    |ap_phi_mux_out_error_new_8_phi_fu_1094_p4         |   3|          2|    1|          2|
+    |ap_phi_mux_out_rdAddress_loc_1_phi_fu_795_p44     |   3|          4|   16|         64|
+    |ap_phi_mux_out_rdAddress_loc_3_phi_fu_1185_p4     |   3|          2|   16|         32|
+    |ap_phi_mux_out_rdEn_new_2_phi_fu_424_p44          |   3|          3|    1|          3|
+    |ap_phi_mux_out_rdEn_new_4_phi_fu_1118_p4          |   3|          2|    1|          2|
+    |ap_phi_mux_out_wrAddress_loc_1_phi_fu_697_p44     |   3|          4|   16|         64|
+    |ap_phi_mux_out_wrAddress_loc_3_phi_fu_1165_p4     |   3|          2|   16|         32|
+    |ap_phi_mux_out_wrData_loc_1_phi_fu_746_p44        |   4|          6|   32|        192|
+    |ap_phi_mux_out_wrData_loc_3_phi_fu_1175_p4        |   3|          2|   32|         64|
+    |ap_phi_mux_out_wrEn_new_2_phi_fu_354_p44          |   3|          3|    1|          3|
+    |ap_phi_mux_out_wrEn_new_4_phi_fu_1106_p4          |   3|          2|    1|          2|
+    |ap_phi_mux_tmp_checksum_flag_5_phi_fu_564_p44     |   3|          3|    1|          3|
+    |ap_phi_mux_tmp_checksum_new_5_phi_fu_635_p44      |   6|         12|   16|        192|
+    |checksum_new_2_reg_1051                           |   4|          7|   16|        112|
+    |count_packets                                     |   5|          9|    4|         36|
+    |count_response                                    |   4|          6|    3|         18|
+    |out2_Packet_state_reg_1236                        |   3|          2|    3|          6|
+    |out2_Response_state_reg_1247                      |   3|          2|    2|          4|
+    |out2_dataOutRdy_reg_1225                          |   3|          2|    1|          2|
+    |out2_error_reg_1192                               |   3|          2|    1|          2|
+    |out2_rdAddress_reg_1280                           |   3|          2|   16|         32|
+    |out2_rdEn_reg_1214                                |   3|          2|    1|          2|
+    |out2_wrAddress_reg_1258                           |   3|          2|   16|         32|
+    |out2_wrData_reg_1269                              |   3|          2|   32|         64|
+    |out2_wrEn_reg_1203                                |   3|          2|    1|          2|
+    |out_Packet_state                                  |   3|          4|    3|         12|
+    |out_Packet_state_loc_6_reg_877                    |   3|          2|    3|          6|
+    |out_Packet_state_loc_7_reg_1138                   |   3|          2|    3|          6|
+    |out_Response_state                                |   3|          4|    2|          8|
+    |out_Response_state_l_1_reg_964                    |   4|          5|    2|         10|
+    |out_Response_state_l_2_reg_1150                   |   3|          2|    2|          4|
+    |out_dataOut                                       |   4|          8|    8|         64|
+    |out_dataOutRdy_new_4_reg_1126                     |   3|          2|    1|          2|
+    |out_error_new_7_reg_841                           |   3|          2|    1|          2|
+    |out_error_new_8_reg_1090                          |   3|          2|    1|          2|
+    |out_rdAddress                                     |   3|          2|   16|         32|
+    |out_rdAddress_loc_2_reg_910                       |   3|          2|   16|         32|
+    |out_rdAddress_loc_3_reg_1182                      |   3|          2|   16|         32|
+    |out_rdEn_new_3_reg_865                            |   3|          2|    1|          2|
+    |out_rdEn_new_4_reg_1114                           |   3|          2|    1|          2|
+    |out_wrAddress                                     |   3|          2|   16|         32|
+    |out_wrAddress_loc_2_reg_888                       |   3|          2|   16|         32|
+    |out_wrAddress_loc_3_reg_1162                      |   3|          2|   16|         32|
+    |out_wrData                                        |   3|          4|   32|        128|
+    |out_wrData_loc_2_reg_899                          |   3|          2|   32|         64|
+    |out_wrData_loc_3_reg_1172                         |   3|          2|   32|         64|
+    |out_wrEn_new_3_reg_853                            |   3|          2|    1|          2|
+    |out_wrEn_new_4_reg_1102                           |   3|          2|    1|          2|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                             | 201|        186|  552|       1723|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+----+----+-----+-----------+
+    |               Name              | FF | LUT| Bits| Const Bits|
+    +---------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                        |   2|   0|    2|          0|
+    |checksum                         |  16|   0|   16|          0|
+    |checksumH                        |   8|   0|    8|          0|
+    |checksumL                        |   8|   0|    8|          0|
+    |checksum_flag_2_reg_1008         |   1|   0|    1|          0|
+    |checksum_new_2_reg_1051          |  16|   0|   16|          0|
+    |count_packets                    |   4|   0|    6|          2|
+    |count_response                   |   3|   0|    5|          2|
+    |out2_Packet_state_reg_1236       |   3|   0|    3|          0|
+    |out2_Response_state_reg_1247     |   2|   0|    2|          0|
+    |out2_dataOutRdy_reg_1225         |   1|   0|    1|          0|
+    |out2_error_reg_1192              |   1|   0|    1|          0|
+    |out2_rdAddress_reg_1280          |  16|   0|   16|          0|
+    |out2_rdEn_reg_1214               |   1|   0|    1|          0|
+    |out2_wrAddress_reg_1258          |  16|   0|   16|          0|
+    |out2_wrData_reg_1269             |  32|   0|   32|          0|
+    |out2_wrEn_reg_1203               |   1|   0|    1|          0|
+    |out_Packet_state                 |   3|   0|    3|          0|
+    |out_Packet_state_loc_6_reg_877   |   3|   0|    3|          0|
+    |out_Packet_state_loc_7_reg_1138  |   3|   0|    3|          0|
+    |out_Response_state               |   2|   0|    2|          0|
+    |out_Response_state_l_1_reg_964   |   2|   0|    2|          0|
+    |out_Response_state_l_2_reg_1150  |   2|   0|    2|          0|
+    |out_dataOut                      |   8|   0|    8|          0|
+    |out_dataOutRdy                   |   1|   0|    1|          0|
+    |out_dataOutRdy_new_3_reg_921     |   1|   0|    1|          0|
+    |out_dataOutRdy_new_4_reg_1126    |   1|   0|    1|          0|
+    |out_error                        |   1|   0|    1|          0|
+    |out_error_new_7_reg_841          |   1|   0|    1|          0|
+    |out_error_new_8_reg_1090         |   1|   0|    1|          0|
+    |out_rdAddress                    |  16|   0|   16|          0|
+    |out_rdAddress_loc_2_reg_910      |  16|   0|   16|          0|
+    |out_rdAddress_loc_3_reg_1182     |  16|   0|   16|          0|
+    |out_rdEn                         |   1|   0|    1|          0|
+    |out_rdEn_new_3_reg_865           |   1|   0|    1|          0|
+    |out_rdEn_new_4_reg_1114          |   1|   0|    1|          0|
+    |out_wrAddress                    |  16|   0|   16|          0|
+    |out_wrAddress_loc_2_reg_888      |  16|   0|   16|          0|
+    |out_wrAddress_loc_3_reg_1162     |  16|   0|   16|          0|
+    |out_wrData                       |  32|   0|   32|          0|
+    |out_wrData_loc_2_reg_899         |  32|   0|   32|          0|
+    |out_wrData_loc_3_reg_1172        |  32|   0|   32|          0|
+    |out_wrEn                         |   1|   0|    1|          0|
+    |out_wrEn_new_3_reg_853           |   1|   0|    1|          0|
+    |out_wrEn_new_4_reg_1102          |   1|   0|    1|          0|
+    |tmp_checksum                     |  16|   0|   16|          0|
+    +---------------------------------+----+----+-----+-----------+
+    |Total                            | 374|   0|  378|          4|
+    +---------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------+-----+-----+------------+---------------------------+--------------+
+|             RTL Ports            | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++----------------------------------+-----+-----+------------+---------------------------+--------------+
+|ap_clk                            |  in |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|ap_rst                            |  in |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|ap_start                          |  in |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|ap_done                           | out |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|ap_idle                           | out |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|ap_ready                          | out |    1| ap_ctrl_hs |       PacketProcess       | return value |
+|agg_result_wrAddress              | out |   16|   ap_vld   |    agg_result_wrAddress   |    pointer   |
+|agg_result_wrAddress_ap_vld       | out |    1|   ap_vld   |    agg_result_wrAddress   |    pointer   |
+|agg_result_wrData                 | out |   32|   ap_vld   |     agg_result_wrData     |    pointer   |
+|agg_result_wrData_ap_vld          | out |    1|   ap_vld   |     agg_result_wrData     |    pointer   |
+|agg_result_wrEn                   | out |    1|   ap_vld   |      agg_result_wrEn      |    pointer   |
+|agg_result_wrEn_ap_vld            | out |    1|   ap_vld   |      agg_result_wrEn      |    pointer   |
+|agg_result_rdAddress              | out |   16|   ap_vld   |    agg_result_rdAddress   |    pointer   |
+|agg_result_rdAddress_ap_vld       | out |    1|   ap_vld   |    agg_result_rdAddress   |    pointer   |
+|agg_result_rdEn                   | out |    1|   ap_vld   |      agg_result_rdEn      |    pointer   |
+|agg_result_rdEn_ap_vld            | out |    1|   ap_vld   |      agg_result_rdEn      |    pointer   |
+|agg_result_error                  | out |    1|   ap_vld   |      agg_result_error     |    pointer   |
+|agg_result_error_ap_vld           | out |    1|   ap_vld   |      agg_result_error     |    pointer   |
+|agg_result_dataOut                | out |    8|   ap_vld   |     agg_result_dataOut    |    pointer   |
+|agg_result_dataOut_ap_vld         | out |    1|   ap_vld   |     agg_result_dataOut    |    pointer   |
+|agg_result_dataOutRdy             | out |    1|   ap_vld   |   agg_result_dataOutRdy   |    pointer   |
+|agg_result_dataOutRdy_ap_vld      | out |    1|   ap_vld   |   agg_result_dataOutRdy   |    pointer   |
+|agg_result_Packet_state           | out |    3|   ap_vld   |  agg_result_Packet_state  |    pointer   |
+|agg_result_Packet_state_ap_vld    | out |    1|   ap_vld   |  agg_result_Packet_state  |    pointer   |
+|agg_result_Response_state         | out |    2|   ap_vld   | agg_result_Response_state |    pointer   |
+|agg_result_Response_state_ap_vld  | out |    1|   ap_vld   | agg_result_Response_state |    pointer   |
+|clk                               |  in |    1|   ap_none  |            clk            |    scalar    |
+|rst                               |  in |    1|   ap_none  |            rst            |    scalar    |
+|dataIn                            |  in |    8|   ap_none  |           dataIn          |    scalar    |
+|dataInRdy                         |  in |    1|   ap_none  |         dataInRdy         |    scalar    |
+|rdData                            |  in |   32|   ap_none  |           rdData          |    scalar    |
+|rdRdy                             |  in |    1|   ap_none  |           rdRdy           |    scalar    |
++----------------------------------+-----+-----+------------+---------------------------+--------------+
+

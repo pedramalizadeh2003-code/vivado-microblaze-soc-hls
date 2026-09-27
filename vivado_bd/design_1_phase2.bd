@@ -1,0 +1,570 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3576DD9800C0C628",
+      "device": "xc7z010clg225-2",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "PacketProcess_0": "",
+      "UART_0": "",
+      "clk_wiz": "",
+      "rst_clk_wiz_100M": "",
+      "clk_wiz_1": "",
+      "rst_clk_wiz_1_100M": ""
+    },
+    "interface_ports": {
+      "ap_ctrl_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      }
+    },
+    "ports": {
+      "Tx_0": {
+        "direction": "O"
+      },
+      "error_0": {
+        "direction": "O"
+      },
+      "Rx_0": {
+        "direction": "I"
+      },
+      "agg_result_Response_state_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "1",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_Packet_state_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_error_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_rdEn_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_rdAddress_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_wrEn_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_wrData_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "agg_result_wrAddress_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "rdRdy_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "rdData_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_rtl_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_100MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_rtl_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "reset_rtl_0_0_1": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_100MHz_1": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_100MHz_1",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_rtl_0_0_1_2": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "clk_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "PacketProcess_0": {
+        "vlnv": "xilinx.com:hls:PacketProcess:0.0",
+        "xci_name": "design_1_PacketProcess_0_2"
+      },
+      "UART_0": {
+        "vlnv": "xilinx.com:module_ref:UART:1.0",
+        "xci_name": "design_1_UART_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "UART",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
+          },
+          "Rx": {
+            "direction": "I"
+          },
+          "Tx": {
+            "direction": "O"
+          },
+          "dataIn": {
+            "direction": "I",
+            "left": "7",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "dataInRdy": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "dataOut": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dataOutRdy": {
+            "direction": "O"
+          },
+          "error": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_2"
+      },
+      "rst_clk_wiz_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_rst_clk_wiz_100M_2"
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_1_1"
+      },
+      "rst_clk_wiz_1_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_rst_clk_wiz_1_100M_1"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl_0",
+          "PacketProcess_0/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "UART_0_Tx": {
+        "ports": [
+          "UART_0/Tx",
+          "Tx_0"
+        ]
+      },
+      "UART_0_dataOut": {
+        "ports": [
+          "UART_0/dataOut",
+          "PacketProcess_0/dataIn"
+        ]
+      },
+      "UART_0_dataOutRdy": {
+        "ports": [
+          "UART_0/dataOutRdy",
+          "PacketProcess_0/dataInRdy"
+        ]
+      },
+      "UART_0_error": {
+        "ports": [
+          "UART_0/error",
+          "error_0"
+        ]
+      },
+      "Rx_0_1": {
+        "ports": [
+          "Rx_0",
+          "UART_0/Rx"
+        ]
+      },
+      "PacketProcess_0_agg_result_dataOut": {
+        "ports": [
+          "PacketProcess_0/agg_result_dataOut",
+          "UART_0/dataIn"
+        ]
+      },
+      "PacketProcess_0_agg_result_Response_state": {
+        "ports": [
+          "PacketProcess_0/agg_result_Response_state",
+          "agg_result_Response_state_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_Packet_state": {
+        "ports": [
+          "PacketProcess_0/agg_result_Packet_state",
+          "agg_result_Packet_state_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_dataOutRdy": {
+        "ports": [
+          "PacketProcess_0/agg_result_dataOutRdy",
+          "UART_0/dataInRdy"
+        ]
+      },
+      "PacketProcess_0_agg_result_error": {
+        "ports": [
+          "PacketProcess_0/agg_result_error",
+          "agg_result_error_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_rdEn": {
+        "ports": [
+          "PacketProcess_0/agg_result_rdEn",
+          "agg_result_rdEn_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_rdAddress": {
+        "ports": [
+          "PacketProcess_0/agg_result_rdAddress",
+          "agg_result_rdAddress_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_wrEn": {
+        "ports": [
+          "PacketProcess_0/agg_result_wrEn",
+          "agg_result_wrEn_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_wrData": {
+        "ports": [
+          "PacketProcess_0/agg_result_wrData",
+          "agg_result_wrData_0"
+        ]
+      },
+      "PacketProcess_0_agg_result_wrAddress": {
+        "ports": [
+          "PacketProcess_0/agg_result_wrAddress",
+          "agg_result_wrAddress_0"
+        ]
+      },
+      "rdRdy_0_1": {
+        "ports": [
+          "rdRdy_0",
+          "PacketProcess_0/rdRdy"
+        ]
+      },
+      "rdData_0_1": {
+        "ports": [
+          "rdData_0",
+          "PacketProcess_0/rdData"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "PacketProcess_0/ap_clk",
+          "rst_clk_wiz_100M/slowest_sync_clk",
+          "UART_0/clk",
+          "rst_clk_wiz_1_100M/slowest_sync_clk"
+        ]
+      },
+      "clk_wiz_locked": {
+        "ports": [
+          "clk_wiz/locked",
+          "rst_clk_wiz_100M/dcm_locked"
+        ]
+      },
+      "clk_wiz_1_locked": {
+        "ports": [
+          "clk_wiz_1/locked",
+          "rst_clk_wiz_1_100M/dcm_locked"
+        ]
+      },
+      "rst_clk_wiz_1_100M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_1_100M/peripheral_aresetn",
+          "UART_0/rst"
+        ]
+      },
+      "reset_rtl_0_1": {
+        "ports": [
+          "reset_rtl_0",
+          "clk_wiz/reset"
+        ]
+      },
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "reset_rtl_0_0_1": {
+        "ports": [
+          "reset_rtl_0_0",
+          "rst_clk_wiz_100M/ext_reset_in"
+        ]
+      },
+      "reset_rtl_0_0_1_1": {
+        "ports": [
+          "reset_rtl_0_0_1",
+          "clk_wiz_1/reset"
+        ]
+      },
+      "clk_100MHz_1_1": {
+        "ports": [
+          "clk_100MHz_1",
+          "clk_wiz_1/clk_in1"
+        ]
+      },
+      "reset_rtl_0_0_1_2_1": {
+        "ports": [
+          "reset_rtl_0_0_1_2",
+          "rst_clk_wiz_1_100M/ext_reset_in"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "PacketProcess_0/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "PacketProcess_0/rst"
+        ]
+      },
+      "rst_clk_wiz_100M_peripheral_reset": {
+        "ports": [
+          "rst_clk_wiz_100M/peripheral_reset",
+          "PacketProcess_0/ap_rst"
+        ]
+      }
+    }
+  }
+}

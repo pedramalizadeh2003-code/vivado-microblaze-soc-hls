@@ -1,0 +1,18 @@
+# Vivado & SDK artifacts
+*.log
+*.jou
+*.str
+*.wdb
+*.vdb
+*.o
+*.obj
+*.exe
+*.elf
+*.bin
+*.d
+.metadata/
+.Xil/
+
+# Temp & OS
+.DS_Store
+Thumbs.db
